@@ -1,0 +1,21 @@
+{
+	"name": "Jekyll Development",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3.1",
+	"workspaceFolder": "/workspaces/jwh9456.github.io",
+	"postCreateCommand": "gem install bundler jekyll --no-document && bundle config set --local path 'vendor/bundle' && rm -f Gemfile.lock && bundle install && bundle update",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.Ruby",
+				"castwide.solargraph"
+			],
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			}
+		}
+	},
+	"forwardPorts": [
+		4000
+	],
+	"remoteUser": "vscode"
+}
