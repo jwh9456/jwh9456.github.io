@@ -2,6 +2,28 @@
   
     {
 
+      "title"    : "gemini-cli 써본 후기",
+      "description" : "gemini-cli를 사용해본 경험과 그 유용성에 대한 간단한 리뷰",
+      "url"      : "/2025/08/06/gemini-cli-%EC%8D%A8%EB%B3%B8-%ED%9B%84%EA%B8%B0",
+      "category" : "",
+      "tags"     : "gemini, cli, review",
+      "date"     : "2025-08-06 00:00:00 +0000"
+
+    } ,
+  
+    {
+
+      "title"    : "EC2 기반 서비스에서 ECS로 전환",
+      "description" : "EC2에서 ECS로의 전환 과정과 그 이점에 대한 설명",
+      "url"      : "/2025/07/26/ec2-%EA%B8%B0%EB%B0%98-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%97%90%EC%84%9C-ecs%EB%A1%9C-%EC%A0%84%ED%99%98",
+      "category" : "",
+      "tags"     : "aws, ecs, ec2",
+      "date"     : "2025-07-26 00:00:00 +0000"
+
+    } ,
+  
+    {
+
       "title"    : "CSS hacks you may not know",
       "description" : "This is a collection of short CSS snippets I thought might be useful for beginners",
       "url"      : "/2014/05/12/css-hacks-you-may-not-know",

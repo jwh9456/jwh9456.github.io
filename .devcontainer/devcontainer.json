@@ -1,16 +1,23 @@
 {
 	"name": "Jekyll Development",
-	"image": "mcr.microsoft.com/devcontainers/ruby:3.1",
-	"workspaceFolder": "/workspaces/jwh9456.github.io",
-	"postCreateCommand": "gem install bundler jekyll --no-document && bundle config set --local path 'vendor/bundle' && rm -f Gemfile.lock && bundle install && bundle update",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3.3",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/ssh:1": {}
+	},
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"postCreateCommand": "gem install bundler jekyll --no-document && bundle config set --local path 'vendor/bundle' && bundle install",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"rebornix.Ruby",
+				"Shopify.ruby-lsp",
 				"castwide.solargraph"
 			],
 			"settings": {
-				"terminal.integrated.shell.linux": "/bin/bash"
+				"terminal.integrated.shell.linux": "/bin/bash",
+				"ruby.useLanguageServer": true,
+				"ruby.format": "rubocop"
 			}
 		}
 	},
